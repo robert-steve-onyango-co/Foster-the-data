@@ -7,39 +7,39 @@ import { Zap } from "lucide-react";
 
 const features = [
   {
-    title: "Smart Automation",
+    title: "Managed Hosting",
     description:
-      "Automate repetitive tasks and workflows to save time and reduce errors.",
-    icon: <Zap className="size-5" />,
+      "High-performance web hosting with predictable latency and low operational overhead.",
+    icon: <Layers className="size-5" />,
   },
   {
-    title: "Advanced Analytics",
+    title: "Managed Databases",
     description:
-      "Gain valuable insights with real-time data visualization and reporting.",
+      "Managed SQL and NoSQL databases tuned for low-latency queries and high availability.",
     icon: <BarChart className="size-5" />,
   },
   {
-    title: "Team Collaboration",
+    title: "Storage & Backups",
     description:
-      "Work together seamlessly with integrated communication tools.",
+      "Durable, cost-efficient storage with lifecycle and backup policies for production data.",
     icon: <Users className="size-5" />,
+  },
+  {
+    title: "Integrations & API",
+    description:
+      "Connect data sources and automate pipelines with our developer-first APIs.",
+    icon: <Zap className="size-5" />,
   },
   {
     title: "Enterprise Security",
     description:
-      "Keep your data safe with end-to-end encryption and compliance features.",
+      "Role-based access, encryption, and compliance controls for peace of mind.",
     icon: <Shield className="size-5" />,
   },
   {
-    title: "Seamless Integration",
+    title: "Dedicated Support",
     description:
-      "Connect with your favorite tools through our extensive API ecosystem.",
-    icon: <Layers className="size-5" />,
-  },
-  {
-    title: "24/7 Support",
-    description:
-      "Get help whenever you need it with our dedicated support team.",
+      "Onboarding, SLA-backed support, and professional services to scale.",
     icon: <Star className="size-5" />,
   },
 ];

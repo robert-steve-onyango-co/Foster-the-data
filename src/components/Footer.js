@@ -9,13 +9,12 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2 font-bold text-base">
               <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
-                S
+                F
               </div>
-              <span>SaaSify</span>
+              <span>Foster the Data</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Streamline your workflow with our all-in-one SaaS platform. Boost
-              productivity and scale your business.
+              Enterprise analytics, POS, and managed infrastructure for data-driven organizations.
             </p>
             <div className="flex gap-4">
               <Link
@@ -87,18 +86,18 @@ const Footer = () => {
             <ul className="space-y-2 text-base">
               <li>
                 <Link
-                  href="/features"
+                  href="/products"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Features
+                  Products
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/solutions"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Pricing
+                  Solutions
                 </Link>
               </li>
               <li>
@@ -195,8 +194,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 sm:flex-row justify-between items-center border-t border-border/40 pt-8">
-          <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} SaaSify. All rights reserved.
+            <p className="text-sm text-muted-foreground">
+            &copy; {new Date().getFullYear()} Foster the Data. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link

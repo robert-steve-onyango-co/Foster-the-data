@@ -1,6 +1,6 @@
-# Saasify - Modern SaaS Landing Page
+# Foster the Data - Marketing Website
 
-Saasify is a sleek and responsive SaaS landing page built with **Next.js, TailwindCSS, ShadCN, and Framer Motion**. It offers a modern UI with smooth animations, light/dark mode support, and multiple essential pages to showcase your SaaS product effectively.
+This repository is adapted to build the Foster the Data marketing website using the existing UI skin (Next.js, TailwindCSS, ShadCN, and Framer Motion). The site showcases Foster the Data's products: analytics dashboards, POS, and managed infrastructure.
 
 ## 🚀 Features
 

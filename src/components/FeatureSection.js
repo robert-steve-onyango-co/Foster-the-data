@@ -20,15 +20,15 @@ const FeatureSection = ({ container, item }) => {
             className="rounded-full px-4 py-1.5 text-sm font-medium"
             variant="secondary"
           >
-            Features
+            Infrastructure
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Everything You Need to Succeed
+            IaaS-first: hosting, databases, and storage
           </h2>
           <p className="max-w-[800px] text-muted-foreground md:text-lg">
-            Our comprehensive platform provides all the tools you need to
-            streamline your workflow, boost productivity, and achieve your
-            goals.
+            Foster the Data focuses on high-performance web hosting, managed
+            SQL/NoSQL databases, and storage solutions optimized for latency and
+            cost. Our SaaS tools run on this platform for consistent results.
           </p>
         </motion.div>
 

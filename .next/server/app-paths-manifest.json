@@ -1,10 +1,6 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/features/page": "app/features/page.js",
-  "/login/page": "app/login/page.js",
-  "/page": "app/page.js",
-  "/pricing/page": "app/pricing/page.js",
-  "/signup/page": "app/signup/page.js",
-  "/testimonials/page": "app/testimonials/page.js"
+  "/about-us/page": "app/about-us/page.js",
+  "/blogs/page": "app/blogs/page.js",
+  "/products/page": "app/products/page.js",
+  "/solutions/page": "app/solutions/page.js"
 }

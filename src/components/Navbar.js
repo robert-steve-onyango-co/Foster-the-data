@@ -3,7 +3,7 @@
 import { Moon } from "lucide-react";
 import { Sun } from "lucide-react";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { X } from "lucide-react";
 import { Menu } from "lucide-react";
@@ -11,9 +11,26 @@ import { ChevronRight } from "lucide-react";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 
-const Navbar = ({ isScrolled, mounted }) => {
+const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    // Run once to set initial state
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -28,35 +45,35 @@ const Navbar = ({ isScrolled, mounted }) => {
         <Link href={"/"}>
           <div className="flex items-center gap-2 font-bold">
             <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground ">
-              S
+              F
             </div>
-            <span>SaaSify</span>
+            <span>Foster the Data</span>
           </div>
         </Link>
         <nav className="hidden md:flex gap-8">
           <Link
-            href="/features"
+            href="/products"
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
-            Features
+            Products
           </Link>
           <Link
-            href="/testimonials"
+            href="/solutions"
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
-            Testimonials
+            Solutions
           </Link>
           <Link
-            href="/pricing"
+            href="/about-us"
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
-            Pricing
+            About
           </Link>
           <Link
-            href="/faq"
+            href="/blogs"
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
-            FAQ
+            Insights
           </Link>
         </nav>
         <div className="hidden md:flex gap-4 items-center">
@@ -79,9 +96,9 @@ const Navbar = ({ isScrolled, mounted }) => {
           >
             Log in
           </Link>
-          <Link href={`/signup`}>
+          <Link href={`/contact-us`}>
             <Button className="rounded-full text-base group cursor-pointer py-5">
-              Get Started
+              Get a Server
               <ChevronRight className="size-4 group-hover:translate-x-1 transition-all ease-in-out duration-200" />
             </Button>
           </Link>
@@ -158,9 +175,9 @@ const Navbar = ({ isScrolled, mounted }) => {
               >
                 Log in
               </Link>
-              <Link href={`/signup`}>
+              <Link href={`/contact-us`}>
                 <Button className="rounded-full">
-                  Get Started
+                  Start Cloud Hosting
                   <ChevronRight className="ml-1 size-4" />
                 </Button>
               </Link>

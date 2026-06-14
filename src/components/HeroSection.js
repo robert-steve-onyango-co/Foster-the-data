@@ -2,6 +2,7 @@
 import React from "react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Check } from "lucide-react";
 import Image from "next/image";
@@ -23,44 +24,47 @@ const HeroSection = () => {
             className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium"
             variant="secondary"
           >
-            Infrastructure-first
+            Data & Business Intelligence
           </Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-            High-performance cloud hosting, databases, and storage
+            Transforming Business Data Into Strategic Growth
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Foster the Data provides high-performance cloud infrastructure and
-            intelligent SaaS tools built on top of it, delivering speed,
-            reliability, and cost-efficiency.
+            Helping SMEs digitize operations, manage data, and unlock insights
+            through analytics and business intelligence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="rounded-full h-12 px-8 text-base cursor-pointer group"
-            >
-              Start Cloud Hosting
-              <ArrowRight className="group-hover:translate-x-1 transition-all ease-in-out duration-200 size-4" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="rounded-full h-12 px-8 text-base cursor-pointer"
-            >
-              Learn More
-            </Button>
+            <Link href="/start-today">
+              <Button
+                size="lg"
+                className="rounded-full h-12 px-8 text-base cursor-pointer group"
+              >
+                Start Today
+                <ArrowRight className="group-hover:translate-x-1 transition-all ease-in-out duration-200 size-4" />
+              </Button>
+            </Link>
+            <Link href="/solutions">
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-full h-12 px-8 text-base cursor-pointer"
+              >
+                Explore Solutions
+              </Button>
+            </Link>
           </div>
           <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-1">
               <Check className="size-4 text-primary" />
-              <span>Secure, compliant hosting</span>
+              <span>Affordable solutions for SMEs</span>
             </div>
             <div className="flex items-center gap-1">
               <Check className="size-4 text-primary" />
-              <span>Real-time dashboards</span>
+              <span>Secure, scalable data management</span>
             </div>
             <div className="flex items-center gap-1">
               <Check className="size-4 text-primary" />
-              <span>24/7 enterprise support</span>
+              <span>Trusted data partnership</span>
             </div>
           </div>
         </motion.div>

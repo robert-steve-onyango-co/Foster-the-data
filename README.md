@@ -46,7 +46,11 @@ git clone https://github.com/pawantech12/saasify-landing-website.git
 # Navigate to project folder
 cd saasify-landing-website
 
+
+
+
 # Install dependencies
+npm install -g pnpm
 pnpm install
 
 # Start development server

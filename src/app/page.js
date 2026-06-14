@@ -3,11 +3,12 @@
 import { useState, useEffect } from "react";
 
 import HeroSection from "@/components/HeroSection";
+import ProductsOverview from "@/components/ProductsOverview";
+import SolutionsOverview from "@/components/SolutionsOverview";
 import LogoSection from "@/components/LogoSection";
 import FeatureSection from "@/components/FeatureSection";
 import WorkingSection from "@/components/WorkingSection";
 import TestimonialSection from "@/components/TestimonialSection";
-import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 
@@ -33,26 +34,16 @@ export default function LandingPage() {
         {/* Hero Section */}
         <HeroSection />
 
-        {/* Logos Section */}
+        {/* Solutions + Products Overview */}
         <LogoSection />
 
-        {/* Features Section */}
-        <FeatureSection container={container} item={item} />
-
-        {/* How It Works Section */}
-
+        {/* New order: Solutions, Products, How It Works, Infrastructure, Testimonials, FAQ, CTA */}
+        <SolutionsOverview />
+        <ProductsOverview />
         <WorkingSection />
-
-        {/* Testimonials Section */}
+        <FeatureSection container={container} item={item} />
         <TestimonialSection />
-
-        {/* Pricing Section */}
-        <PricingSection />
-
-        {/* FAQ Section */}
         <FAQSection />
-
-        {/* CTA Section */}
         <CTASection />
       </main>
     </>

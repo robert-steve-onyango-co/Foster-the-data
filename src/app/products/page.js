@@ -7,27 +7,26 @@ export default function ProductsIndex() {
       <div className="max-w-5xl mx-auto text-center">
         <h1 className="text-4xl font-bold">Products</h1>
         <p className="text-muted-foreground mt-4">
-          Foster the Data focuses on managed infrastructure and hosting as our
-          core offering. We also provide SaaS products—Analytics, POS, and
-          Booking—that integrate tightly with our infrastructure.
+          Foster the Data provides a suite of products designed to help SMEs
+          manage data, protect information, and surface business insights.
         </p>
         <div className="grid md:grid-cols-3 gap-6 mt-8">
-          <Link href="/products/analytics" className="p-6 border rounded-lg">
-            <h3 className="text-xl font-semibold">Analytics</h3>
+          <Link href="/products/foster-insight" className="p-6 border rounded-lg">
+            <h3 className="text-xl font-semibold">Foster Insight</h3>
             <p className="text-sm text-muted-foreground mt-2">
-              Production dashboards, custom reports, and real-time metrics.
+              Business intelligence and analytics for real-time and historical insights.
             </p>
           </Link>
-          <Link href="/products/pos" className="p-6 border rounded-lg">
-            <h3 className="text-xl font-semibold">Point of Sale</h3>
+          <Link href="/products/foster-backup" className="p-6 border rounded-lg">
+            <h3 className="text-xl font-semibold">Foster Backup</h3>
             <p className="text-sm text-muted-foreground mt-2">
-              Fast, reliable POS for retail and hospitality with offline mode.
+              Managed backup and recovery to protect critical business data.
             </p>
           </Link>
-          <Link href="/products/infrastructure" className="p-6 border rounded-lg">
-            <h3 className="text-xl font-semibold">Infrastructure</h3>
+          <Link href="/products/foster-crm" className="p-6 border rounded-lg">
+            <h3 className="text-xl font-semibold">Foster CRM</h3>
             <p className="text-sm text-muted-foreground mt-2">
-              Secure hosting, backups, and managed data infrastructure.
+              CRM tools to manage customers, leads, and sales pipelines.
             </p>
           </Link>
         </div>

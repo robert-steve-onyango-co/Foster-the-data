@@ -17,11 +17,11 @@ const ContactPage = () => {
         className="text-center mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-          Get in Touch
+          Contact Foster the Data
         </h2>
         <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
-          Have questions or need help? Fill out the form below or reach out to
-          us directly.
+          Get in touch for consultations, demos, or support. We respond to
+          enquiries promptly.
         </p>
       </motion.div>
 
@@ -70,15 +70,20 @@ const ContactPage = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <Mail className="size-6" />
-              <p>support@saascompany.com</p>
+              <p>fosterthedata@gmail.com</p>
             </div>
             <div className="flex items-center gap-3">
               <Phone className="size-6" />
-              <p>+1 234 567 890</p>
+              <p>+254745301939</p>
             </div>
             <div className="flex items-center gap-3">
               <MapPin className="size-6" />
-              <p>123 SaaS Street, Tech City, USA</p>
+              <p>Magadi Road, Nairobi, Kenya</p>
+            </div>
+          </div>
+          <div className="mt-6">
+            <div className="h-44 border rounded-md flex items-center justify-center text-muted-foreground">
+              Map placeholder (coming soon)
             </div>
           </div>
         </motion.div>

@@ -20,6 +20,7 @@ const Page = () => {
         </Button>
       </div>
     </>
+  );
 };
 
 export default Page;

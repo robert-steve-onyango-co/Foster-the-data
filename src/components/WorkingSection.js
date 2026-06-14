@@ -37,13 +37,13 @@ const WorkingSection = () => {
           {[
             {
               step: "01",
-              title: "Create Account",
+                title: "Create an Account",
               description:
                 "Sign up in seconds with just your email. No credit card required to get started.",
             },
             {
               step: "02",
-              title: "Configure Workspace",
+                title: "Configure Your Workspace",
               description:
                 "Customize your workspace to match your team's unique workflow and requirements.",
             },

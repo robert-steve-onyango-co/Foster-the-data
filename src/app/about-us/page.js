@@ -7,105 +7,109 @@ import { ArrowRight } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-center px-6 py-16 bg-background text-foreground">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="w-full max-w-5xl text-center"
-      >
-        <h2 className="text-4xl font-bold">Who We Are</h2>
-        <p className="text-lg text-muted-foreground mt-4">
-          We are a team of innovators dedicated to building scalable and
-          impactful digital solutions.
+    <section className="w-full min-h-screen px-6 py-16 bg-background text-foreground">
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-4xl font-bold">About Foster the Data</h1>
+        <p className="text-muted-foreground mt-4">
+          Foster the Data is a Data Transformation, Business Intelligence, and
+          Managed Data Services company helping SMEs digitize operations,
+          manage data, and gain actionable business insights.
         </p>
-      </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-8 mt-12 w-full max-w-5xl">
-        {/* Mission */}
-        <Card>
-          <CardContent className="p-6">
-            <h3 className="text-2xl font-semibold">🌍 Our Mission</h3>
-            <p className="text-muted-foreground mt-2">
-              Empower businesses with cutting-edge technology and seamless
-              digital experiences.
-            </p>
-          </CardContent>
-        </Card>
-
-        {/* Vision */}
-        <Card>
-          <CardContent className="p-6">
-            <h3 className="text-2xl font-semibold">🚀 Our Vision</h3>
-            <p className="text-muted-foreground mt-2">
-              To create a future where businesses thrive through innovation and
-              efficiency.
-            </p>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Core Values */}
-      <div className="grid md:grid-cols-3 gap-8 mt-12 w-full max-w-5xl">
-        {[
-          {
-            title: "✨ Innovation",
-            text: "We embrace creativity to drive progress.",
-          },
-          {
-            title: "🛠️ Quality",
-            text: "Delivering excellence through precision and performance.",
-          },
-          {
-            title: "🤝 Collaboration",
-            text: "Strong partnerships lead to exceptional results.",
-          },
-        ].map((item, index) => (
-          <Card key={index}>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold">{item.title}</h3>
-              <p className="text-muted-foreground mt-2">{item.text}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-
-      {/* Tech Stack */}
-      <div className="text-center mt-12 w-full max-w-5xl">
-        <h3 className="text-3xl font-bold">💻 Our Tech Stack</h3>
-        <p className="text-muted-foreground mt-2">
-          We build with the latest and most reliable technologies.
-        </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-4">
-          {[
-            "React",
-            "Next.js",
-            "TailwindCSS",
-            "Node.js",
-            "MongoDB",
-            "TypeScript",
-          ].map((tech) => (
-            <span
-              key={tech}
-              className="px-4 py-2 bg-muted rounded-lg text-primary font-medium"
-            >
-              {tech}
-            </span>
-          ))}
+        {/* Our Story */}
+        <div className="mt-8">
+          <h2 className="text-2xl font-semibold">Our Story</h2>
+          <p className="text-muted-foreground mt-2">
+            We started with a simple mission: to make enterprise-grade data
+            tools accessible to growing businesses. Over the years we have
+            partnered with SMEs across industries to modernize operations,
+            centralize data, and deliver insights that drive growth.
+          </p>
         </div>
-      </div>
 
-      {/* Call-to-Action */}
-      <div className="flex flex-col items-center mt-12">
-        <h3 className="text-3xl font-bold">🚀 Let&apos;s Build Together</h3>
-        <p className="text-muted-foreground mt-2">
-          Partner with us to bring your ideas to life.
-        </p>
-        <Button className="mt-6 rounded-full px-8 py-5 text-lg cursor-pointer group">
-          Get in Touch{" "}
-          <ArrowRight className="size-4 group-hover:translate-x-1 transition-all ease-in-out duration-300" />
-        </Button>
+        {/* Mission / Vision / Values */}
+        <div className="grid md:grid-cols-3 gap-6 mt-8">
+          <div className="p-6 border rounded-lg">
+            <h3 className="text-xl font-semibold">Our Mission</h3>
+            <p className="text-muted-foreground mt-2">
+              Help organizations unlock value from their data through
+              digitization, analytics, and managed services.
+            </p>
+          </div>
+
+          <div className="p-6 border rounded-lg">
+            <h3 className="text-xl font-semibold">Our Vision</h3>
+            <p className="text-muted-foreground mt-2">
+              To become Africa's most trusted data transformation partner for
+              SMEs.
+            </p>
+          </div>
+
+          <div className="p-6 border rounded-lg">
+            <h3 className="text-xl font-semibold">Our Values</h3>
+            <ul className="list-disc list-inside mt-2 text-muted-foreground">
+              <li>Integrity</li>
+              <li>Innovation</li>
+              <li>Reliability</li>
+              <li>Excellence</li>
+              <li>Customer Success</li>
+              <li>Continuous Learning</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Why Foster the Data */}
+        <div className="mt-8">
+          <h2 className="text-2xl font-semibold">Why Foster the Data</h2>
+          <p className="text-muted-foreground mt-2">
+            We focus on local SME needs, offering affordable, scalable, and
+            practical data solutions backed by experienced engineers and a
+            strong commitment to long-term partnerships.
+          </p>
+        </div>
+
+        {/* Image gallery (horizontal scroll) */}
+        <div className="mt-8">
+          <h2 className="text-2xl font-semibold">Gallery</h2>
+          <div className="mt-4 overflow-x-auto no-scrollbar flex gap-4 py-4">
+            {[
+              "https://images.unsplash.com/photo-1559526324-593bc073d938",
+              "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
+              "https://images.unsplash.com/photo-1523408131635-3d1a0b3c6f1b",
+              "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+            ].map((src, i) => (
+              <img
+                key={i}
+                src={src}
+                alt={`gallery-${i}`}
+                className="h-44 w-auto rounded-lg shadow-md"
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Callouts */}
+        <div className="grid md:grid-cols-2 gap-6 mt-8">
+          <div className="p-6 border rounded-lg">
+            <h3 className="text-xl font-semibold">Local SME Focus</h3>
+            <p className="text-muted-foreground mt-2">
+              We design solutions that meet the constraints and growth patterns
+              of small and growing businesses.
+            </p>
+          </div>
+
+          <div className="p-6 border rounded-lg">
+            <h3 className="text-xl font-semibold">Scalable Technology</h3>
+            <p className="text-muted-foreground mt-2">
+              Our platform scales with your business so you pay for what you
+              need while staying ready to grow.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-8 text-center">
+          <a href="/contact-us" className="btn btn-primary">Contact Us</a>
+        </div>
       </div>
     </section>
   );

@@ -1,7 +1,19 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 const LogoSection = () => {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const logoSrc = mounted && theme === "dark" ? "/logo-light.png" : "/logo-dark.png";
+
   return (
     <section className="w-full py-12 border-y bg-muted/30">
       <div className=" px-4 md:px-6">
@@ -13,8 +25,8 @@ const LogoSection = () => {
             {[1, 2, 3, 4, 5].map((i) => (
               <Image
                 key={i}
-                src={`/meta-logo.png`}
-                alt={`Company logo ${i}`}
+                src={logoSrc}
+                alt={`Foster the Data logo ${i}`}
                 width={120}
                 height={60}
                 className=" w-auto opacity-70  transition-all hover:opacity-100 hover:grayscale-0"

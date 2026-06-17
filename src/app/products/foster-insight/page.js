@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function FosterInsightPage() {
   return (
@@ -41,10 +42,10 @@ export default function FosterInsightPage() {
 
         <div className="mt-8 flex gap-4">
           <Link href="/contact-us">
-            <button className="btn btn-primary">Book a Consultation</button>
+            <Button size="lg" className="rounded-full">Book a Consultation</Button>
           </Link>
           <Link href="/contact-us">
-            <button className="btn btn-outline">Learn More</button>
+            <Button size="lg" variant="outline">Learn More</Button>
           </Link>
         </div>
       </div>

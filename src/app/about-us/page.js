@@ -40,7 +40,7 @@ export default function AboutPage() {
           <div className="p-6 border rounded-lg">
             <h3 className="text-xl font-semibold">Our Vision</h3>
             <p className="text-muted-foreground mt-2">
-              To become Africa's most trusted data transformation partner for
+              To become Africa&apos;s most trusted data transformation partner for
               SMEs.
             </p>
           </div>

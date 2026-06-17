@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["cdn.dribbble.com"], // Add the external image domain here
+    domains: ["cdn.dribbble.com", "images.unsplash.com"], // Add the external image domains here
   },
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function SolutionsPage() {
   return (
@@ -124,7 +125,7 @@ export default function SolutionsPage() {
 
         <div className="mt-8">
           <Link href="/contact-us">
-            <button className="btn btn-primary">Book a Consultation</button>
+            <Button size="lg" className="rounded-full">Book a Consultation</Button>
           </Link>
         </div>
       </div>

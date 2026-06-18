@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -78,10 +79,12 @@ export default function AboutPage() {
               "https://images.unsplash.com/photo-1523408131635-3d1a0b3c6f1b",
               "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
             ].map((src, i) => (
-              <img
+              <Image
                 key={i}
                 src={src}
                 alt={`gallery-${i}`}
+                width={480}
+                height={176}
                 className="h-44 w-auto rounded-lg shadow-md"
               />
             ))}

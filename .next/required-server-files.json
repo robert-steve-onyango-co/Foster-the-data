@@ -50,7 +50,8 @@
       "loader": "default",
       "loaderFile": "",
       "domains": [
-        "cdn.dribbble.com"
+        "cdn.dribbble.com",
+        "images.unsplash.com"
       ],
       "disableStaticImages": false,
       "minimumCacheTTL": 60,

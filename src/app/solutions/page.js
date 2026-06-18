@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function SolutionsPage() {
@@ -18,9 +19,11 @@ export default function SolutionsPage() {
             <p className="text-sm text-muted-foreground mt-2">
               Transition from manual processes to structured digital systems.
             </p>
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1559526324-593bc073d938"
               alt="digitization"
+              width={640}
+              height={180}
               className="w-full h-32 object-cover rounded-md mt-3"
             />
             <ul className="mt-3 text-muted-foreground list-disc list-inside text-sm">
@@ -40,9 +43,11 @@ export default function SolutionsPage() {
             <p className="text-sm text-muted-foreground mt-2">
               Convert business data into meaningful insights and reports.
             </p>
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1551836022-1f2f1e2d3b4b"
               alt="analytics"
+              width={640}
+              height={180}
               className="w-full h-32 object-cover rounded-md mt-3"
             />
             <ul className="mt-3 text-muted-foreground list-disc list-inside text-sm">
@@ -62,9 +67,11 @@ export default function SolutionsPage() {
             <p className="text-sm text-muted-foreground mt-2">
               Act as an outsourced data department delivering professional support.
             </p>
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1581091012184-7c1a1b6b3a8b"
               alt="data-ops"
+              width={640}
+              height={180}
               className="w-full h-32 object-cover rounded-md mt-3"
             />
             <ul className="mt-3 text-muted-foreground list-disc list-inside text-sm">
